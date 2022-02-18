@@ -39,7 +39,7 @@ button {
 .items {
   height: 30rem;
   overflow-y: auto;
-  margin-top: 0.5rem;
+  margin: 0;
 }
 
 .item__description {
