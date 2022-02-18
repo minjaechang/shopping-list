@@ -5,6 +5,12 @@ const addBtn = document.querySelector(".form__button");
 // enter text into input area
 function onAdd() {
   const text = input.value;
+
+  if (text === "") {
+    input.focus();
+    return;
+  }
+
   const item = createItem(text);
   items.appendChild(item);
   item.scrollIntoView({ block: "center" });
