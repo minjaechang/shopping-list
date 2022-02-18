@@ -5,17 +5,9 @@ const addBtn = document.querySelector(".form__button");
 // enter text into input area
 function onAdd() {
   const text = input.value;
-  console.log(input.value);
-  // make a new item with given text
   const item = createItem(text);
-  // add new item to the list
   items.appendChild(item);
-  console.log(items);
-
-  // scrol to the new item created
   item.scrollIntoView({ block: "center" });
-
-  // reset input after item is added
   input.value = "";
   input.focus();
 }
