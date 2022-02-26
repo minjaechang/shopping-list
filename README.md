@@ -1,7 +1,5 @@
 # Shopping List
 
-## Description
-
 🛒 Simple shopping list app where you can write down your shopping list! <br />
 
 ## Demo
