@@ -4,12 +4,17 @@ const form = document.querySelector('.form');
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
-  const input = document.querySelector('.input');
+  const input = document.querySelector('.input').value;
+
+  if (!input || input.trim().length === 0) {
+    return;
+  }
+
   const item = document.createElement('li');
   item.setAttribute('class', 'item');
 
   const span = document.createElement('span');
-  span.textContent = input.value;
+  span.textContent = input;
 
   const deleteBtn = document.createElement('button');
   deleteBtn.setAttribute('class', 'deleteBtn');
