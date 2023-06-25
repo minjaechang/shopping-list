@@ -30,13 +30,16 @@ body {
   flex-grow: 1;
   list-style: none;
   padding: 0;
+  padding-top: 1rem;
   margin: 0;
+  background-color: rgb(247, 247, 247);
+  overflow-y: auto;
 }
 
 .item {
   display: flex;
   justify-content: space-between;
-  margin: 2rem 2rem;
+  padding: 1rem 2rem;
   font-size: 1.2rem;
 }
 
@@ -59,7 +62,7 @@ body {
   font-size: 1.3rem;
   padding: 0.5rem;
   flex-grow: 1;
-  border: 1px solid grey;
+  border: none;
 }
 
 .submitBtn {
