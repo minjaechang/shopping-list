@@ -1,0 +1,72 @@
+body {
+  background-color: rgb(216, 246, 255);
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 600px;
+  margin: 15vh auto;
+  background-color: white;
+  box-shadow: 0 10px 40px rgba(53, 221, 255, 0.385);
+}
+
+.title {
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  background: rgb(53, 221, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(53, 221, 255, 1) 0%,
+    rgba(111, 178, 255, 1) 100%
+  );
+  color: white;
+  font-size: 1.8rem;
+}
+
+.list {
+  flex-grow: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 2rem;
+  font-size: 1.2rem;
+}
+
+.deleteBtn {
+  font-size: 1.2rem;
+  background-color: transparent;
+  border: none;
+  transition: color 200ms ease-in;
+}
+
+.deleteBtn:hover {
+  color: red;
+}
+
+.form {
+  display: flex;
+}
+
+.input {
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  flex-grow: 1;
+  border: 1px solid grey;
+}
+
+.submitBtn {
+  height: 3rem;
+  width: 3rem;
+  font-size: 1.2rem;
+  background-color: rgb(111, 178, 255);
+  color: white;
+  border: none;
+}

@@ -12,6 +12,7 @@ form.addEventListener('submit', (event) => {
   span.textContent = input.value;
 
   const deleteBtn = document.createElement('button');
+  deleteBtn.setAttribute('class', 'deleteBtn');
   deleteBtn.innerHTML = `<i class="fa-solid fa-trash"></i>`;
   deleteBtn.addEventListener('click', () => {
     const item = deleteBtn.parentNode;
