@@ -2,8 +2,6 @@ const list = document.querySelector('.list');
 const button = document.querySelector('.submitBtn');
 const form = document.querySelector('.form');
 
-let deleteBtns;
-
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   const input = document.querySelector('.input');
